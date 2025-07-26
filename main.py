@@ -20,3 +20,5 @@ app.add_handler(CommandHandler("admin", admin_panel))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, chat_with_gpt))
 app.add_handler(MessageHandler(filters.ALL, handle_admin))  # reklamani yuborish
 app.run_polling()
+if __name__ == '__main__':
+    application.run_polling()
